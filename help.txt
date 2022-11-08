@@ -1,0 +1,22 @@
+
+-Sistema Inasistencias Docentes
+
+-Version: 1.0.1
+
+-Creadres:	 Mathias Labora
+		 Diego Rodriguez
+
+-Soporte y base de conocimientos: Sandro Amaral
+
+-Software utilizado para la realizacion:
+	- SO Ubuntu 22.04.1 LTS
+	- GNU  nano  6.2 
+
+-En el ingreso de fechas se contempla la validacion de anio limite el 2023
+
+
+-Repositorio: https://github.com/mathiaslabora/proyecto-sistemas-operativos
+
+
+-Contacto: mathiaslabora@gmail.com
+

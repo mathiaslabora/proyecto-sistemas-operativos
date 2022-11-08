@@ -4,13 +4,15 @@
 while true
 do
 read -p "
+Seleccione que desea hacer:
+
 1 - Eliminar un registro
 
 0 - Volver al menu principal
 
-Ingrese opcion: " Op
+Ingrese opcion: " Option
 clear
-case $Op in
+case $Option in
 1)
 read -p "Ingrese codigo de registro para eliminar: " COD
 clear

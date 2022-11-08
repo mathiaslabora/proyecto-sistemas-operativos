@@ -25,12 +25,13 @@ then
 #variables para
 Nombre=$(grep $Doc lista-profesores.txt | cut -d ":" -f2)
 Apellido=$(grep $Doc lista-profesores.txt | cut -d ":" -f3)
+CantAusencias=$(egrep -x "^.+:.+:[0-9]{4}$MES[0-9]{02}:.+:.+:.+:.+:.+$" faltas.txt | wc -l)
 clear
-echo "El docente: $Nombre $Apellido CI: $Doc,"
-echo "Tiene el siguiente registro de inasistencias en el mes $MES:"
-echo "-----------------------------------------------------------------------"
+echo "El docente: $Nombre $Apellido CI: $Doc"
+echo "Tiene $CantAusencias ausencias en el mes - $MES - y son los siguientes registros:"
+echo "------------------------------------------------------------------"
 echo "Fecha desde:Fecha hasta:Usuario:Fecha Registro" > temp
-echo  $(egrep -x "^.+:.+:[0-9]{4}02[0-9]{02}:.+:.+:.+:.+:.+$" faltas.txt | cut -d ":" -f3-6  >> temp)
+echo  $(egrep -x "^.+:.+:[0-9]{4}$MES[0-9]{02}:.+:.+:.+:.+:.+$" faltas.txt | cut -d ":" -f3-6  >> temp)
 cat temp | column -t -s:
 rm temp
 TS=$(date +%d/%m/%y-%H:%M:%S)

@@ -1,14 +1,17 @@
 #! /bin.bash
+
 while true
 do
 read -p "
+Seleccione lo que desea hacer:
+
 1 - Registrar Falta Docente
 
 0 - Volver al menu principal
 
-Ingrese opcion: " Op
+Ingrese opcion: " Option
 
-case $Op in
+case $Option in
 1)
 clear
 while true
@@ -114,7 +117,8 @@ then
 
 TS=$(date +%d/%m/%y-%H:%M:%S)
 NUM=$(cat cont.txt)
-let NUM++ #NUM=$(($NUM+1))
+let NUM++ #NUM=$(($NUM+1)) alternativa
+
 echo $NUM > cont.txt
 echo $NUM:$CI:$FINICIO:$FFIN:$USER:$TS >>faltas.txt
 echo "Se registro inasistencia codigo: "$NUM "por el usuario "$USER "Fecha: "$TS"." >> registro.log

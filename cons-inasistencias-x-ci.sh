@@ -1,14 +1,14 @@
 #! /bin/bash
 
-
 while true
 do
 clear
 read -p "Ingrese documento a consultar: " Doc
+
 if  grep -q "^$Doc:" lista-profesores.txt
 then
 CantRegist=$(grep $Doc faltas.txt | wc -l) 
-CantRegist=$(($CantRegist + 1))
+
 Fdesde=$(grep $Doc faltas.txt | cut -d ":" -f3)
 Nombre=$(grep $Doc lista-profesores.txt | cut -d ":" -f2)
 Apellido=$(grep $Doc lista-profesores.txt | cut -d ":" -f3)
