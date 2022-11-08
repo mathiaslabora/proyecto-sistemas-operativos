@@ -112,7 +112,7 @@ FFIN=$AFin$MFin$DFin
 if [ $FFIN -gt $FINICIO ]
 then
 
-TS=$(date +%d/%m/%y%H:%M:%S)
+TS=$(date +%d/%m/%y-%H:%M:%S)
 NUM=$(cat cont.txt)
 let NUM++ #NUM=$(($NUM+1))
 echo $NUM > cont.txt

@@ -1,9 +1,14 @@
 #! /bin/bash
+TS=$(date +%d/%m/%y-%H:%M:%S)
+echo "Se ejecuto el script principal por el usuario "$USER "Fecha: "$TS"." >> registro.log
 
 while true
 do
 clear
 read -p "
+Bienvenido al sistema de registro de inasistencias docentes.
+Seleccione la opcion deseada.
+
 1 - Alta de ausencia
 2 - Baja
 3 - Modificacion

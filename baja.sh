@@ -18,7 +18,7 @@ if grep -q "^$COD:" faltas.txt
 then grep -v "^$COD:" faltas.txt > temp.txt
 mv temp.txt faltas.txt
 clear
-TS=$(date +%d/%m/%y%H:%M:%S)
+TS=$(date +%d/%m/%y-%H:%M:%S)
 echo "Registro eliminado satisfactoriamente"
 echo "El registro codigo: " $COD "se elimino por" $USER "Fecha: "$TS"." >> registro.log
 else 
