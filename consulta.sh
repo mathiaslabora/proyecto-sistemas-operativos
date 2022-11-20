@@ -5,10 +5,10 @@ do
 read -p "
 ------------------- CONSULTAS -------------------
 
-1 - Consultar cantidad ausencias docente
-2 - Consultar ausencias por docente en un mes
-3 - Consultar total de faltas de un docente
-4 - Consultar registros de ausencias de usuario en un mes
+1 - Consultar todas las ausencias de un docente
+2 - Consultar ausencias por docente en un periodo
+3 - Consultar cantidad total de faltas de un docente
+4 - Consultar registros de ausencias por un usuario en un periodo
 5 - Ver todos los registros
 6 - Ver listado docentes
 7 - Buscar Docente por nombre

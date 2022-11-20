@@ -15,9 +15,9 @@ read -p "
 // Seleccione la opcion deseada.                                  //
 //                                                                //
 // 1 - Alta de ausencia                                           //
-// 2 - Baja                                                       //
+// 2 - Baja de ausencia                                           //
 // 3 - Modificacion                                               //
-// 4 - Consultar                                                  //
+// 4 - Consultas                                                  //
 //                                                                //
 // 0 - Salir                                                      //
 //                                                                //

@@ -31,25 +31,25 @@ done
 
 while true
 do
-read -p "Ingrese dia de Inicio inasistencia: " DIni
+read -p "Ingrese dia de Inicio inasistencia 01 al 31: " DIni
 if echo $DIni | egrep -xq "0[1-9]|[12][0-9]|3[01]"
 then
 echo "Dia ingresado correctamente"
 break
 else
-echo "Ingrese un dia de 1 a 31"
+echo "Ingrese un dia de 01 a 31"
 fi
 done
 
 while true
 do
-read -p "Ingrese mes de Inicio inasistencia: " MIni
+read -p "Ingrese mes de Inicio inasistencia 01 al 12: " MIni
 if echo $MIni | egrep -xq "0[1-9]|1[0-2]"
 then
 echo "Mes ingresado correctamente"
 break
 else
-echo "Ingrese un mes de 1 a 12"
+echo "Ingrese un mes de 01 a 12"
 fi
 done
 
@@ -71,25 +71,25 @@ done
 
 while true
 do
-read -p "Ingrese dia de Fin inasistencia: " DFin
+read -p "Ingrese dia de Fin inasistencia 01 al 31: " DFin
 if echo $DFin | egrep -xq "0[1-9]|[12][0-9]|3[01]"
 then
 echo "Dia ingresado correctamente"
 break
 else
-echo "Ingrese un dia de 1 a 31"
+echo "Ingrese un dia de 01 a 31"
 fi
 done
 
 while true
 do
-read -p "Ingrese mes de Fin de inasistencia: " MFin
+read -p "Ingrese mes de Fin de inasistencia 01 al 12: " MFin
 if echo $MFin | egrep -xq "0[1-9]|1[0-2]"
 then
 echo "Mes ingresado correctamente"
 break
 else
-echo "Ingrese un mes de 1 a 12"
+echo "Ingrese un mes de 01 a 12"
 fi
 done
 

@@ -1,7 +1,11 @@
 
 -Sistema Inasistencias Docentes
 
--Version: 1.0.1
+-Version: 2.0.1
+
+-Detalles de version: 
+	-Se corrigen errores con fechas en varias consultas
+	-Se mejoran consultas de busquedas con fecha e implementa lapso de meses y anio
 
 -Creadres:	 Mathias Labora
 		 Diego Rodriguez
@@ -12,7 +16,7 @@
 	- SO Ubuntu 22.04.1 LTS
 	- GNU  nano  6.2 
 
--En el ingreso de fechas se contempla la validacion de anio limite el 2023
+-En el ingreso de fechas se contempla la validacion de anio limite el 2022 inclusive
 
 
 -Repositorio: https://github.com/mathiaslabora/proyecto-sistemas-operativos

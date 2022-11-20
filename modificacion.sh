@@ -42,14 +42,14 @@ VARECHO="Codigo valido \nDatos del registro que va a modificar: \nCedula: $CI \n
 #valido cedula
 while true
 do 
-read -p "Ingrese cedula nueva: " Cedula
+read -p "Ingrese cedula: " Cedula
 if grep -q "^$Cedula:" lista-profesores.txt
 then CI=$Cedula
 break
 else 
 clear
 echo -e $VARECHO
-echo "Ingrese una cedula valida"
+echo "Ingrese una cedula que sea de un docente actual"
 fi
 done
 
@@ -179,7 +179,7 @@ mv temp.txt faltas.txt
 echo $Codigo:$CI:$FINI:$FFIN:$USUARIO:$TS >>faltas.txt
 
 TS=$(date +%d/%m/%y-%H:%M:%S)
-echo "Se modifico inasistencia codigo: "$Codigo "por el usuario "$USER "Fecha: "$TS"." >> registro.log
+echo "Se modifico inasistencia codigo: "$Codigo "por el usuario "$USER "Fecha: "$TS >> registro.log
 clear
 echo "Se modifico correctamente la inasistencia"
 break
